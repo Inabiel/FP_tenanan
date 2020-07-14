@@ -1,141 +1,495 @@
+@import url("Nabil_Bootstrap.css");
+@import url("hover-min.css");
+
+
 @font-face {
-	font-family: Playfair;
-	src: url(../assets/font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+    font-family: Playfair;
+    src: url(../assets/font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
 }
 
 @font-face {
-	font-family: Roboto-Medium;
-	src: url(../assets/font/Roboto/Roboto-Medium.ttf);
+    font-family: Roboto-Medium;
+    src: url(../assets/font/Roboto/Roboto-Medium.ttf);
 }
 
 @font-face {
-	font-family: Roboto;
-	src: url(../assets/font/Roboto/Roboto-Regular.ttf);
+    font-family: Roboto;
+    src: url(../assets/font/Roboto/Roboto-Regular.ttf);
 }
 
 @font-face {
-	font-family: Helveticaa;
-	src: url(../assets/font/helvetica/helvetica.ttf);
+    font-family: Helveticaa;
+    src: url(../assets/font/helvetica/helvetica.ttf);
 }
 
-html {
-	scroll-behavior: smooth;
-	overflow-x: hidden;
+html,
+body {
+    scroll-behavior: smooth;
 }
-.fixed-top {
-	width: 100%;
+
+a {
+    text-decoration: none;
 }
+
+.nabil-roboto {
+    font-family: Roboto;
+}
+
+.space {
+    padding-top: 150px;
+}
+
 .nabil-nav-font {
-	font-family: Roboto;
-	font-weight: 100;
-	font-size: 15px;
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: 15px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-	color: rgb(43, 43, 43);
+    color: rgb(43, 43, 43);
 }
 
 .navbar-dark:hover .navbar-nav:hover .nav-link:hover {
-	color: rgb(158, 28, 28);
-	transition: 0.2s;
-	transform: translate(3px, 0px);
+    color: rgb(158, 28, 28);
+    transition: 0.2s;
 }
 
 .nabil-logo-font {
-	font-family: Helveticaa;
-	font-size: 1em;
+    font-family: Helveticaa;
+    font-size: 1em;
 }
+
 .nabil-progress-container {
-	width: 100%;
-	height: 8px;
-	background: #ccc;
+    width: 100%;
+    height: 8px;
+    background: #ccc;
 }
 
 .nabil-progress-bar {
-	height: 8px;
-	background: #1ac020;
-	width: 0%;
+    height: 8px;
+    background: #1ac020;
+    width: 0%;
 }
 
 .nabil-shrink {
-	background-color: #f8f8f8;
-	transition: 0.5s ease-in-out;
+    background-color: #f8f8f8;
+    transition: 0.5s ease-in-out;
 }
+
 .navbar-toggler .navbar-toggler-icon {
-	width: 20px;
-	height: 25px;
+    width: 20px;
+    height: 25px;
 }
+
 .nabil-shrink a {
-	color: white;
+    color: white;
 }
 
-.nabil-section-banner {
-	background-color: rgb(48, 65, 161);
-	height: 750px;
-}
-.nabil-index-banner-bg {
+.nabil-section-banner-bg {
+    background: url("../assets/fix.png") left bottom/cover no-repeat;
+    height: 750px;
+    padding: 0 0;
 }
 
-.nabil-about-me-banner-bg {
+.nabil-aboutme-banner-bg {
+    background: url('../assets/banner.png');
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .nabil-view-my-porto {
-	padding: 10px;
-	border: 2px solid black;
-	background-color: rgb(172, 64, 64);
-	width: 175px;
-	text-align: center;
-	border-radius: 25px;
-	color: white;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: #d13520;
+    width: 175px;
+    text-align: center;
+    color: white;
 }
 
 .nabil-view-my-porto:hover {
-	background-color: rgba(19, 3, 3, 0.678);
-	transition: 0.3s;
+    background-color: rgba(19, 3, 3, 0.678);
+    transition: 0.3s;
 }
 
 .nabil-view-my-porto a {
-	text-decoration: none;
-	color: white;
+    text-decoration: none;
+    color: white;
 }
 
 .nabil-about-caption h3 {
-	font-size: 1.8em;
+    font-size: 1.8em;
+}
+
+.nabil-navigation-text a {
+    color: black;
+    text-decoration: none;
+}
+
+.nabil-navigation-text a:hover {
+    color: red;
+    transition: 0.3s;
 }
 
 .nabil-footer {
-	min-height: 300px;
-	background-color: rgb(29, 28, 28);
-}
-.nabil-footer > .nabil-logo-font {
-	font-size: 7em;
-}
-@media only screen and (max-width: 991px) {
-	.nabil-view-my-porto {
-		margin: 0 auto;
-		width: 175px;
-		padding: 8px;
-	}
-
-	.nabil-about-caption {
-		margin-top: 2em;
-	}
-
-	.nabil-text-center {
-		text-align: center;
-	}
-	.nabil-logo-font {
-		font-family: Helveticaa;
-		font-size: 0.9em;
-	}
+    min-height: 300px;
+    background-color: rgb(29, 28, 28);
 }
 
-@media only screen and (max-width: 573px) {
-	.nabil-bg-mobile {
-		background-color: #f8f8f8c7;
-	}
+.nabil-footer-font {
+    font-family: Helveticaa;
+}
+
+.potrait {
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
 }
 
 section {
-	min-height: 300px;
+    min-height: 300px;
 }
+
+.nabil-back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+.nabil-timeline {
+    position: relative;
+    width: 660px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 1em 0;
+    list-style-type: none;
+}
+
+.nabil-timeline:before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: ' ';
+    display: block;
+    width: 6px;
+    height: 100%;
+    margin-left: -3px;
+    background: rgb(80, 80, 80);
+    background: -moz-linear-gradient(top, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(30, 87, 153, 1)), color-stop(100%, rgba(125, 185, 232, 1)));
+    background: -webkit-linear-gradient(top, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+    background: -o-linear-gradient(top, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+    background: -ms-linear-gradient(top, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+    background: linear-gradient(to bottom, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+
+    z-index: 5;
+}
+
+.nabil-timeline li {
+    padding: 1em 0;
+}
+
+.nabil-timeline li:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.nabil-direction-l {
+    position: relative;
+    width: 300px;
+    float: left;
+    text-align: right;
+}
+
+.nabil-direction-r {
+    position: relative;
+    width: 300px;
+    float: right;
+}
+
+.nabil-flag-wrapper {
+    position: relative;
+    display: inline-block;
+
+    text-align: center;
+}
+
+.nabil-flag {
+    position: relative;
+    display: inline;
+    background: rgb(248, 248, 248);
+    padding: 6px 10px;
+    border-radius: 5px;
+
+    font-weight: 600;
+    text-align: left;
+}
+
+.nabil-direction-l .nabil-flag {
+    -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.nabil-direction-r .nabil-flag {
+    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.nabil-direction-l .nabil-flag:before,
+.nabil-direction-r .nabil-flag:before {
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    content: ' ';
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin-top: -10px;
+    background: #fff;
+    border-radius: 10px;
+    border: 4px solid rgb(255, 80, 80);
+    z-index: 10;
+}
+
+.nabil-direction-r .nabil-flag:before {
+    left: -40px;
+}
+
+.nabil-direction-l .nabil-flag:after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    height: 0;
+    width: 0;
+    margin-top: -8px;
+    border: solid transparent;
+    border-left-color: rgb(248, 248, 248);
+    border-width: 8px;
+    pointer-events: none;
+}
+
+.nabil-direction-r .nabil-flag:after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    height: 0;
+    width: 0;
+    margin-top: -8px;
+    border: solid transparent;
+    border-right-color: rgb(248, 248, 248);
+    border-width: 8px;
+    pointer-events: none;
+}
+
+.nabil-time-wrapper {
+    display: inline;
+
+    line-height: 1em;
+    font-size: 0.66666em;
+    color: rgb(250, 80, 80);
+    vertical-align: middle;
+}
+
+.nabil-direction-l .nabil-time-wrapper {
+    float: left;
+}
+
+.nabil-direction-r .nabil-time-wrapper {
+    float: right;
+}
+
+.time {
+    display: inline-block;
+    padding: 4px 6px;
+    background: rgb(248, 248, 248);
+}
+
+.nabil-desc {
+    margin: 1em 0.75em 0 0;
+
+    font-size: 0.77777em;
+    font-style: italic;
+    line-height: 1.5em;
+}
+
+.nabil-direction-r .nabil-desc {
+    margin: 1em 0 0 0.75em;
+}
+
+.nabil-service-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(224, 114, 114);
+    border-radius: 50%;
+}
+
+.nabil-service-icon img {
+    margin: 12px;
+    height: 25px;
+    height: 25px;
+}
+
+.nabil-service-icon {}
+
+.nabil-gal {
+    min-height: 700px;
+}
+
+.nabil-language-border {
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 6px;
+}
+
+@media only screen and (max-width: 991px) {
+    .nabil-view-my-porto {
+        margin: 0 auto;
+        width: 175px;
+        padding: 8px;
+    }
+
+    .nabil-about-caption {
+        margin-top: 2em;
+    }
+
+    .nabil-text-center {
+        text-align: center;
+    }
+
+    .nabil-logo-font {
+        font-family: Helveticaa;
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .nabil-bg-mobile {
+        background-color: #f8f8f8c7;
+    }
+
+    .nabil-section-banner {
+        height: 700px;
+    }
+
+    .nabil-timeline {
+        width: 100%;
+        padding: 4em 0 1em 0;
+    }
+
+    .nabil-timeline li {
+        padding: 2em 0;
+    }
+
+    .nabil-direction-l,
+    .nabil-direction-r {
+        float: none;
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .nabil-flag-wrapper {
+        text-align: center;
+    }
+
+    .nabil-flag {
+        background: rgb(255, 255, 255);
+        z-index: 15;
+    }
+
+    .nabil-direction-l .nabil-flag:before,
+    .nabil-direction-r .nabil-flag:before {
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        content: ' ';
+        display: block;
+        width: 12px;
+        height: 12px;
+        margin-left: -9px;
+        background: #fff;
+        border-radius: 10px;
+        border: 4px solid rgb(255, 80, 80);
+        z-index: 10;
+    }
+
+    .nabil-direction-l .nabil-flag:after,
+    .nabil-direction-r .nabil-flag:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: -8px;
+        height: 0;
+        width: 0;
+        margin-left: -8px;
+        border: solid transparent;
+        border-bottom-color: rgb(255, 255, 255);
+        border-width: 8px;
+        pointer-events: none;
+    }
+
+    .nabil-time-wrapper {
+        display: block;
+        position: relative;
+        margin: 4px 0 0 0;
+        z-index: 14;
+    }
+
+    .nabil-direction-l .nabil-time-wrapper {
+        float: none;
+    }
+
+    .nabil-direction-r .nabil-time-wrapper {
+        float: none;
+    }
+
+    .nabil-desc {
+        position: relative;
+        margin: 1em 0 0 0;
+        padding: 1em;
+        background: rgb(245, 245, 245);
+        -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
+        -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
+
+        z-index: 15;
+    }
+
+    .nabil-direction-l .nabil-desc,
+    .nabil-direction-r .nabil-desc {
+        position: relative;
+        margin: 1em 1em 0 1em;
+        padding: 1em;
+
+        z-index: 15;
+    }
+
+}
+
+@media screen and (min-width: 400px ?? max-width: 660px) {
+
+    .nabil-direction-l .nabil-desc,
+    .nabil-direction-r .nabil-desc {
+        margin: 1em 4em 0 4em;
+    }
+
+}
+
+/*
+css positioning checker!
+Kalo misal error margin
+* {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+}
+*/
