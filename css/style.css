@@ -91,7 +91,7 @@ a {
 
 .nabil-section-banner-bg {
     background: url("../assets/fix.png") left bottom/cover no-repeat;
-    height: 750px;
+    height: 100vh;
     padding: 0 0;
 }
 
