@@ -35,7 +35,11 @@ a {
     font-family: Roboto;
 }
 
-.space {
+.nabil-playfair {
+    font-family: Playfair;
+}
+
+.nabil-space {
     padding-top: 150px;
 }
 
@@ -133,7 +137,7 @@ a {
 
 .nabil-footer {
     min-height: 300px;
-    background-color: rgb(29, 28, 28);
+    background-color: rgb(5, 14, 71);
 }
 
 .nabil-footer-font {
@@ -308,7 +312,7 @@ section {
     float: right;
 }
 
-.time {
+.nabil-time {
     display: inline-block;
     padding: 4px 6px;
     background: rgb(248, 248, 248);
@@ -486,7 +490,7 @@ section {
 
 /*
 css positioning checker!
-Kalo misal error margin
+Kalo misal ada posisi yang error
 * {
     background: #000 !important;
     color: #0f0 !important;
